@@ -1,0 +1,364 @@
+{
+  "events": [
+    {
+      "id": "hackathon-2025",
+      "title": "Aero 2025",
+      "category": "Technical",
+      "logo": "/events/logos/aero.jpg",
+      "tagline": "Code. Innovate. Transform.",
+      "shortDescription": "24-hour coding marathon to build innovative solutions",
+      "fullDescription": "Join the ultimate coding challenge where teams compete to build groundbreaking applications. Work with cutting-edge technologies, collaborate with brilliant minds, and turn your ideas into reality within 24 hours.",
+      "coverImage": "/events/logos/aero.jpg",
+      "bgColor": "from-blue-500/20 to-cyan-500/20",
+      "date": "March 15-16, 2025",
+      "time": "9:00 AM - 9:00 AM (Next Day)",
+      "venue": "CSE Block, Labs 301-305",
+      "teamSize": "2-4 members",
+      "prizeMoney": {
+        "first": "₹50,000",
+        "second": "₹30,000",
+        "third": "₹20,000"
+      },
+      "registrationFee": "₹200 per team",
+      "rules": [
+        "Teams must consist of 2-4 members from any college",
+        "All team members must be present during registration",
+        "Use of any programming language and framework is allowed",
+        "Projects must be original work created during the hackathon",
+        "Teams must use provided API keys and not bring pre-written code",
+        "Internet access will be provided but external hardware must be approved",
+        "Final submission must include working demo, code repository, and presentation",
+        "Judges' decision will be final and binding"
+      ],
+      "rounds": [
+        {
+          "name": "Registration & Team Formation",
+          "description": "Register your team and finalize members"
+        },
+        {
+          "name": "Problem Statement Release",
+          "description": "Choose from 5+ problem statements across different domains"
+        },
+        {
+          "name": "Development Phase",
+          "description": "24 hours of intense coding and building"
+        },
+        {
+          "name": "Final Presentation",
+          "description": "Present your solution to judges (10 min presentation + 5 min Q&A)"
+        }
+      ],
+      "judging": [
+        "Innovation & Creativity (30%)",
+        "Technical Implementation (25%)",
+        "User Experience & Design (20%)",
+        "Business Viability (15%)",
+        "Presentation Quality (10%)"
+      ],
+      "contact": {
+        "name": "Technical Head",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "hackathon@iare.ac.in"
+      }
+    },
+    {
+      "id": "robo-wars",
+      "title": "aiml",
+      "category": "Robotics",
+      "logo": "/events/logos/aiml.jpg",
+      "tagline": "Battle of the Bots",
+      "shortDescription": "Ultimate robot combat competition",
+      "fullDescription": "Design and build combat robots to compete in intense battles. Test your engineering skills, strategic thinking, and robot design prowess in this action-packed competition.",
+      "coverImage": "/events/logos/aiml.jpg",
+      "bgColor": "from-red-500/20 to-orange-500/20",
+      "date": "March 16, 2025",
+      "time": "10:00 AM - 6:00 PM",
+      "venue": "Robotics Arena, Ground Floor",
+      "teamSize": "3-5 members",
+      "prizeMoney": {
+        "first": "₹40,000",
+        "second": "₹25,000",
+        "third": "₹15,000"
+      },
+      "registrationFee": "₹300 per team",
+      "rules": [
+        "Robot weight must not exceed 25 kg",
+        "Maximum dimensions: 75cm x 75cm x 75cm",
+        "Autonomous or manual control allowed",
+        "No projectile weapons or liquid weapons",
+        "Sharp weapons and pneumatic systems allowed (within safety limits)",
+        "Teams must bring their own remote controls and batteries",
+        "Arena dimensions: 20ft x 20ft with metallic floor",
+        "Each match duration: 3 minutes",
+        "Weapons must pass safety inspection before competition"
+      ],
+      "rounds": [
+        {
+          "name": "Technical Inspection",
+          "description": "Robot safety and specification verification"
+        },
+        {
+          "name": "Qualifying Rounds",
+          "description": "One-on-one battles, knockout format"
+        },
+        {
+          "name": "Semi Finals",
+          "description": "Top 4 robots compete"
+        },
+        {
+          "name": "Grand Finale",
+          "description": "Ultimate showdown for the championship"
+        }
+      ],
+      "judging": [
+        "Aggression (30%)",
+        "Damage (25%)",
+        "Control (20%)",
+        "Strategy (15%)",
+        "Design Innovation (10%)"
+      ],
+      "contact": {
+        "name": "Robotics Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "robowars@iare.ac.in"
+      }
+    },
+    {
+      "id": "web-design-championship",
+      "title": "civil",
+      "category": "Design",
+      "logo": "/events/logos/civil.jpg",
+      "tagline": "Design the Future",
+      "shortDescription": "Create stunning web experiences",
+      "fullDescription": "Showcase your web design and development skills by creating beautiful, functional, and innovative websites. Focus on user experience, visual design, and technical implementation.",
+      "coverImage": "/events/logos/civil.jpg",
+      "bgColor": "from-purple-500/20 to-pink-500/20",
+      "date": "March 15, 2025",
+      "time": "2:00 PM - 6:00 PM",
+      "venue": "IT Lab, 4th Floor",
+      "teamSize": "1-3 members",
+      "prizeMoney": {
+        "first": "₹30,000",
+        "second": "₹20,000",
+        "third": "₹10,000"
+      },
+      "registrationFee": "₹150 per team",
+      "rules": [
+        "Teams can have 1-3 members",
+        "Use any framework or technology (React, Vue, Angular, vanilla JS, etc.)",
+        "Website must be responsive and work on all devices",
+        "No pre-built templates allowed - all code must be original",
+        "Must include at least 3 pages/sections",
+        "Judging based on design, functionality, and innovation",
+        "Final submission must include live demo and code repository",
+        "Plagiarism will lead to immediate disqualification"
+      ],
+      "rounds": [
+        {
+          "name": "Theme Announcement",
+          "description": "Website theme and requirements revealed"
+        },
+        {
+          "name": "Development Phase",
+          "description": "4 hours to design and develop"
+        },
+        {
+          "name": "Presentation",
+          "description": "5-minute demo and walkthrough"
+        }
+      ],
+      "judging": [
+        "Visual Design & Aesthetics (30%)",
+        "User Experience (25%)",
+        "Responsiveness (20%)",
+        "Code Quality (15%)",
+        "Innovation (10%)"
+      ],
+      "contact": {
+        "name": "Design Head",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "webdesign@iare.ac.in"
+      }
+    },
+    {
+      "id": "startup-pitch-competition",
+      "title": "Cyber security",
+      "category": "Entrepreneurship",
+      "logo": "/events/logos/cs.jpg",
+      "tagline": "Pitch Your Dream",
+      "shortDescription": "Present your startup idea to investors",
+      "fullDescription": "Have a groundbreaking business idea? Present your startup pitch to industry experts and investors. Win funding, mentorship, and the opportunity to turn your vision into reality.",
+      "coverImage": "/events/logos/cs.jpg",
+      "bgColor": "from-green-500/20 to-emerald-500/20",
+      "date": "March 17, 2025",
+      "time": "11:00 AM - 4:00 PM",
+      "venue": "Seminar Hall A",
+      "teamSize": "2-5 members",
+      "prizeMoney": {
+        "first": "₹1,00,000 + Incubation Support",
+        "second": "₹60,000 + Mentorship",
+        "third": "₹40,000"
+      },
+      "registrationFee": "₹200 per team",
+      "rules": [
+        "Teams must have 2-5 members",
+        "Startup idea must be original and innovative",
+        "Prepare 5-minute pitch presentation",
+        "Business plan must be submitted before presentation",
+        "Q&A session will follow each pitch (5 minutes)",
+        "Ideas can be from any domain (Tech, Healthcare, Education, etc.)",
+        "Financial projections must be realistic and data-backed",
+        "Teams may be asked for additional documentation"
+      ],
+      "rounds": [
+        {
+          "name": "Business Plan Submission",
+          "description": "Submit detailed business plan (deadline: March 10)"
+        },
+        {
+          "name": "Preliminary Screening",
+          "description": "Top 20 teams selected for pitch round"
+        },
+        {
+          "name": "Pitch Presentations",
+          "description": "Present to panel of investors and entrepreneurs"
+        },
+        {
+          "name": "Final Round",
+          "description": "Top 5 teams pitch again with refined presentations"
+        }
+      ],
+      "judging": [
+        "Innovation & Market Need (30%)",
+        "Business Model Viability (25%)",
+        "Team Capability (20%)",
+        "Financial Projections (15%)",
+        "Pitch Quality (10%)"
+      ],
+      "contact": {
+        "name": "Entrepreneurship Cell",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "startup@iare.ac.in"
+      }
+    },
+    {
+      "id": "ai-ml-workshop",
+      "title": "CSE",
+      "category": "Workshop",
+      "logo": "/events/logos/cs.jpg",
+      "tagline": "Master Artificial Intelligence",
+      "shortDescription": "Hands-on workshop on AI and Machine Learning",
+      "fullDescription": "Learn the fundamentals of Artificial Intelligence and Machine Learning from industry experts. Build real-world projects and understand how to implement AI solutions.",
+      "coverImage": "/events/cs.jpg",
+      "bgColor": "from-indigo-500/20 to-blue-500/20",
+      "date": "March 15, 2025",
+      "time": "10:00 AM - 5:00 PM",
+      "venue": "Conference Hall",
+      "teamSize": "Individual",
+      "prizeMoney": {
+        "first": "Certificate of Completion",
+        "second": "Workshop Materials",
+        "third": "Project Template Access"
+      },
+      "registrationFee": "₹500 per person",
+      "rules": [
+        "Bring your own laptop with minimum 8GB RAM",
+        "Basic programming knowledge required (Python preferred)",
+        "Install required software before workshop (list will be provided)",
+        "Attendance is mandatory for certificate",
+        "Workshop materials will be provided digitally",
+        "Hands-on projects must be completed during workshop",
+        "Limited seats available - first come first serve"
+      ],
+      "rounds": [
+        {
+          "name": "Introduction to AI/ML",
+          "description": "Fundamentals and core concepts"
+        },
+        {
+          "name": "Hands-on Session 1",
+          "description": "Building your first ML model"
+        },
+        {
+          "name": "Lunch Break & Networking",
+          "description": "Connect with peers and experts"
+        },
+        {
+          "name": "Hands-on Session 2",
+          "description": "Deep Learning and Neural Networks"
+        },
+        {
+          "name": "Project Work",
+          "description": "Build a complete AI/ML project"
+        }
+      ],
+      "judging": [],
+      "contact": {
+        "name": "Workshop Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "aiml@iare.ac.in"
+      }
+    },
+    {
+      "id": "gaming-tournament",
+      "title": "Gaming Tournament",
+      "category": "Gaming",
+      "logo": "/events/logos/cse.jpg",
+      "tagline": "Battle Royale",
+      "shortDescription": "E-sports tournament featuring popular games",
+      "fullDescription": "Compete in the biggest gaming tournament featuring multiple popular titles. Show your gaming skills, strategies, and teamwork to become the champion.",
+      "coverImage": "/events/cse.jpg",
+      "bgColor": "from-yellow-500/20 to-red-500/20",
+      "date": "March 16, 2025",
+      "time": "1:00 PM - 8:00 PM",
+      "venue": "Gaming Arena, IT Block",
+      "teamSize": "Varies by game (1-5)",
+      "prizeMoney": {
+        "first": "₹35,000",
+        "second": "₹20,000",
+        "third": "₹10,000"
+      },
+      "registrationFee": "₹100 per person",
+      "rules": [
+        "Games: BGMI, Valorant, CS:GO, FIFA, and more",
+        "Must bring your own gaming peripherals (mouse, keyboard, headset)",
+        "Team size varies by game type",
+        "Separate tournaments for each game",
+        "All players must follow game-specific rules",
+        "Fair play policy - cheating leads to disqualification",
+        "Matches will be streamed live",
+        "Participants must be present 30 minutes before match"
+      ],
+      "rounds": [
+        {
+          "name": "Registration & Game Selection",
+          "description": "Choose your game and register your team"
+        },
+        {
+          "name": "Group Stage",
+          "description": "Round-robin format in groups"
+        },
+        {
+          "name": "Knockout Stage",
+          "description": "Elimination rounds"
+        },
+        {
+          "name": "Grand Finals",
+          "description": "Best of 3/5 matches for championship"
+        }
+      ],
+      "judging": [
+        "Game Performance",
+        "Team Coordination",
+        "Strategic Play",
+        "Sportsmanship"
+      ],
+      "contact": {
+        "name": "Gaming Head",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "gaming@iare.ac.in"
+      }
+    }
+  ]
+}
+
