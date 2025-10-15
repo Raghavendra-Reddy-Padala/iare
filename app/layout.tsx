@@ -11,9 +11,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Skal Ventures",
-  description: "Investment strategies that outperform the market",
-    generator: 'v0.app'
+  title: "Iare Consortium",
+  description: "A TechFest of Iare",
+    generator: 'TechMocha'
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
-      {/* <Footer />  */}
+      <Footer /> 
 
       </body>
     </html>
