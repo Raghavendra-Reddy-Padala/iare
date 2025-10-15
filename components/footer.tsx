@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { Logo } from "./logo";
 import { GL } from "./gl"; // Assuming GL component exists
+import { Button } from "./ui/button";
 
 
 
-// Social Links Data
 const socialLinks = [
   { name: "Instagram", href: "https://instagram.com" },
   { name: "Twitter", href: "https://twitter.com" },
@@ -152,8 +152,14 @@ export default function Footer() {
 
         {/* Made with love tag */}
         <div className="text-center mt-8 font-mono text-xs text-foreground/40">
-          Made with <span className="text-red-500">♥</span> by IARE Tech Team
-        </div>
+  Made with <span className="text-red-500">♥</span> by{" "}
+  <Button 
+    className="h-auto p-0 font-mono text-xs text-foreground/40 hover:text-foreground/60"
+    onClick={() => window.open('https://techmocha.in', '_blank')}
+  >
+[     TechMocha     ]
+  </Button>
+</div>
       </div>
     </footer>
   );
