@@ -2,10 +2,14 @@
   "events": [
     {
       "id": "Webathon",
-      "title": "WebNova - Igniting the Future Web",
+      "title": "WebNova",
+      "tagline": "Igniting the Future Web",
       "category": "Webathon",
       "date": "October 31 - November 01, 2025",
-      "participants": "2-4 per team",
+      "teamSize": {
+        "min": 2,
+        "max": 4
+      },
       "registrationFee": "300",
       "logo": "https://media.deloitte.com/is/image/deloitte/800-600-governance-privacy",
       "shortDescription": "WebNova is an innovative webathon designed to inspire creativity and problem-solving through Prompt Engineering and AI-powered tools.",
@@ -24,7 +28,7 @@
         "Refreshments and meals will be provided",
         "Workspace and power outlets are available",
         "Mentors are available for technical guidance",
-        "Judging is done based on innovation, Functionalities used, Design, imppact and presentation",
+        "Judging is done based on innovation, Functionalities used, Design, impact and presentation",
         "Winners will be announced on the same day"
       ],
       "Abstract and Deliverables": [
@@ -45,10 +49,14 @@
     },
     {
       "id": "CyberSecurity",
-      "title": "House of Echoes - The evidence isn’t in blood — it’s in bytes",
+      "title": "House of Echoes",
+      "tagline": "The evidence isn't in blood — it's in bytes",
       "category": "Cyber Security",
       "date": "October 31 - November 01, 2025",
-      "participants": "Max 3 members per team",
+      "teamSize": {
+        "min": 1,
+        "max": 3
+      },
       "registrationFee": "149",
       "logo": "https://media.licdn.com/dms/image/v2/D4E22AQFMT-L7TDcxWw/feedshare-shrink_800/feedshare-shrink_800/0/1703223822931?e=2147483647&v=beta&t=gSRHA81ogxul4Ax6JaAfNw-EpkpOIRS3Oz_dejAstz8",
       "shortDescription": "Investigative cybersecurity event that challenges participants to uncover hidden digital crimes through logic, analysis, and forensic reasoning.",
@@ -67,13 +75,9 @@
         "Collaborative Investigation: Participants may work in teams, mirroring real incident response environments.",
         "Awareness Focus: Reinforces cyber hygiene, responsible disclosure, and the ethics of digital investigation.",
         "--- **GUIDELINES** ---",
-        "Submit robot specifications by October 20, 2025",
-        "Practice arena available one day before event",
-        "Repair tools and workspace provided",
-        "Battery charging stations available",
-        "Follow all safety protocols strictly",
-        "Spare parts recommended",
-        "Team captain must attend technical briefing"
+        "Teams must follow the instructions of coordinators throughout the event.",
+        "Clue sharing between teams is strictly prohibited.",
+        "Fair play is mandatory – any form of cheating, plagiarism, or unfair assistance will lead to disqualification"
       ],
       "Abstract and Deliverables": [
         "The House of Echoes event aims to promote analytical thinking, ethical investigation skills, and an applied understanding of cybersecurity.",
@@ -87,10 +91,14 @@
     },
     {
       "id": "TreasureHunt",
-      "title": "Techno Hunt - Divide And Conquer Beyond Your Limits",
+      "title": "Techno Hunt",
+      "tagline": "Divide And Conquer Beyond Your Limits",
       "category": "Treasure Hunt",
       "date": "October 31 - November 01, 2025",
-      "participants": "4 per team",
+      "teamSize": {
+        "min": 4,
+        "max": 4
+      },
       "registrationFee": "200",
       "logo": "https://img.freepik.com/free-photo/flat-lay-hand-holding-magnifying-glass_23-2149617673.jpg?semt=ais_incoming&w=740&q=80",
       "shortDescription": "A thrilling 2-day technical treasure hunt that blends brainpower, coding, and adventure!",
@@ -109,7 +117,7 @@
         "--- **GUIDELINES** ---",
         "Teams must follow the instructions of coordinators throughout the event.",
         "Clue sharing between teams is strictly prohibited.",
-        "Judges’ and organizers’ decisions are final and binding.",
+        "Judges' and organizers' decisions are final and binding.",
         "Fair play is mandatory – any form of cheating, plagiarism, or unfair assistance will lead to disqualification",
         "Judges decision is final"
       ],
@@ -126,10 +134,14 @@
     },
     {
       "id": "ConcreteCanoe",
-      "title": "AquaStruct - The Concrete Canoe Challenge",
+      "title": "AquaStruct",
+      "tagline": "The Concrete Canoe Challenge",
       "category": "Concrete Canoe",
       "date": "October 31 - November 01, 2025",
-      "participants": "1-5 per team",
+      "teamSize": {
+        "min": 1,
+        "max": 5
+      },
       "registrationFee": "300",
       "logo": "https://viterbischool.usc.edu/wp-content/uploads/2025/05/concrete-canoe.jpg",
       "shortDescription": "Design, construct, and race a canoe made entirely out of concrete.",
@@ -165,15 +177,19 @@
     },
     {
       "id": "PosterPresentation",
-      "title": "EngiVision - Imagine. Innovate. Inspire.",
+      "title": "EngiVision",
+      "tagline": "Imagine. Innovate. Inspire.",
       "category": "Poster Presentation",
       "date": "October 31 - November 01, 2025",
-      "participants": "3-4 per team",
+      "teamSize": {
+        "min": 2,
+        "max": 4
+      },
       "registrationFee": "200",
       "logo": "https://i.pinimg.com/1200x/00/ea/38/00ea385888c8fcf08c4f3c3ecbb39a5f.jpg",
       "shortDescription": "Interdisciplinary poster presentation event to ignite creativity, innovation, and technical communication.",
       "Rules & Regulations": [
-        "Team size: 2-3 members",
+        "Team size: 2-4 members",
         "₹200 per team",
         "Open to all streams and branches"
       ],
@@ -198,15 +214,19 @@
     },
     {
       "id": "ProjectExpo",
-      "title": "VisionX - Unleash the power within your ideas",
+      "title": "VisionX",
+      "tagline": "Unleash the power within your ideas",
       "category": "Project Expo",
       "date": "October 31 - November 01, 2025",
-      "participants": "3 members per team",
+      "teamSize": {
+        "min": 2,
+        "max": 3
+      },
       "registrationFee": "300",
       "logo": "https://www.iare.ac.in/sites/default/files/Consortium/2019/1.jpg",
       "shortDescription": "Showcases innovative projects from all engineering departments, promoting creativity, teamwork, and practical learning.",
       "Rules & Regulations": [
-        "Team size: 2 members",
+        "Team size: 2-3 members",
         "All the team members must be present during the project evaluation.",
         "Teams must designate a Team Leader responsible for communication with organizers.",
         "Registration fee: ₹ 300/ Team"
@@ -232,36 +252,40 @@
     },
     {
       "id": "LANGaming",
-      "title": "BattleLAN - Link up. Lock in. Light it up",
+      "title": "BattleLAN",
+      "tagline": "Link up. Lock in. Light it up",
       "category": "LAN Gaming",
       "date": "October 31 - November 01, 2025",
-      "participants": "3 - 4 members per team ",
+      "teamSize": {
+        "min": 3,
+        "max": 4
+      },
       "registrationFee": "200",
       "logo": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
       "shortDescription": "An exciting and competitive LAN gaming event combines the thrill of gaming with the creativity of technology, featuring both technical and non-technical games.",
       "Rules & Regulations": [
-        "Team Size: 3–4 members per team ",
-        "Registration Fee: ₹200 per team (common for all games) ",
+        "Team Size: 3–4 members per team",
+        "Registration Fee: ₹200 per team (common for all games)",
         "Participants can take part in multiple games, provided scheduling allows. All matches will be conducted on LAN to ensure fair play and stable performance."
       ],
       "Themes, Guidelines & Instructions": [
-        "Competitive Gaming and Team Collaboration ",
+        "Competitive Gaming and Team Collaboration",
         "Coding under Constraints",
         "Fun Meets Technology",
-        "Creativity and Strategy in Digital Play ",
+        "Creativity and Strategy in Digital Play",
         "--- **GUIDELINES** ---",
         "Each team must consist of 3–4 members.",
         "Participants must bring their own accessories (headphones, mouse, controller, etc.).",
         "Internet or external software assistance is not allowed unless specified.",
         "Teams must maintain discipline and fair play throughout the event.",
-        "Judges’ and organizers’ decisions will be final.",
+        "Judges' and organizers' decisions will be final.",
         "Late entries will not be accepted once a round has started."
       ],
       "Abstract and Deliverables": [
         "Each game and technical round will have independent scoring criteria:",
         "BGMI & Free Fire: Survival duration, kill count, and adherence to rules.",
         "Code Relay: Code correctness, efficiency, and ability to adapt to surprise constraints.",
-        "Tech Dumb Charades: Number of correctly guessed terms and time efficiency. ",
+        "Tech Dumb Charades: Number of correctly guessed terms and time efficiency.",
         "Final rankings will be based on cumulative performance and adherence to event rules."
       ],
       "Contact": {
@@ -272,10 +296,14 @@
     },
     {
       "id": "ShortFilm",
-      "title": "Short Film Contest - Frames of Vision, Tales of Heart",
+      "title": "Short Film Contest",
+      "tagline": "Frames of Vision, Tales of Heart",
       "category": "Short Film",
       "date": "October 31 - November 01, 2025",
-      "participants": "5 members per team",
+      "teamSize": {
+        "min": 1,
+        "max": 5
+      },
       "registrationFee": "249",
       "logo": "https://sofy.tv/blog/wp-content/uploads/2018/01/1-41-1200x675.jpg",
       "shortDescription": "A celebration of creativity and storytelling, giving students a platform to showcase their ideas through films.",
@@ -292,7 +320,7 @@
         "Ensure all content adheres to college ethics.",
         "Avoid plagiarism or use of copyrighted material.",
         "Late submissions will not be accepted.",
-        "Judges’ decisions are final"
+        "Judges' decisions are final"
       ],
       "Abstract and Deliverables": [
         "Evaluation will be done based on on Storyline, Creativity, Cinematography, Acting & Direction."
@@ -305,10 +333,14 @@
     },
     {
       "id": "Photography",
-      "title": "Photography Contest - Frames of Vision, Tales of Heart",
+      "title": "Photography Contest",
+      "tagline": "Frames of Vision, Tales of Heart",
       "category": "Photography",
       "date": "October 31 - November 01, 2025",
-      "participants": "1 member",
+      "teamSize": {
+        "min": 1,
+        "max": 1
+      },
       "registrationFee": "99",
       "logo": "https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg",
       "shortDescription": "A celebration of creativity and storytelling, giving students a platform to showcase their ideas through photography.",
@@ -319,15 +351,15 @@
         "Organizers reserve the right to disqualify entries violating guidelines."
       ],
       "Themes, Guidelines & Instructions": [
-        "Our College Through Your Lens” – Participants must capture photos only within the IARE campus.",
+        "Our College Through Your Lens – Participants must capture photos only within the IARE campus.",
         "--- **GUIDELINES** ---",
         "Event Duration: The contest will be conducted over two days.",
         "Judging Criteria: Creativity & Originality, Composition, Relevance to Theme, and Technical Quality.",
-        "Photos must be original and captured during the event. Plagiarism or use of stock images will result in disqualification. Judges’ decisions will be final.",
+        "Photos must be original and captured during the event. Plagiarism or use of stock images will result in disqualification. Judges' decisions will be final.",
         "The judges decision will be final and binding."
       ],
       "Abstract and Deliverables": [
-        "Whether it’s through the lens of a camera or the art of storytelling, this event encourages participants to express, explore, and inspire.",
+        "Whether it's through the lens of a camera or the art of storytelling, this event encourages participants to express, explore, and inspire.",
         "Judged on Creativity, Composition, Originality, and Technical Quality."
       ],
       "Contact": {
@@ -339,9 +371,13 @@
     {
       "id": "Paper-Presentation",
       "title": "Technical Paper Presentation",
+      "tagline": "",
       "category": "Paper-Presentation",
       "date": "October 31 - November 01, 2025",
-      "participants": "2-3 per team",
+      "teamSize": {
+        "min": 1,
+        "max": 3
+      },
       "registrationFee": "200",
       "logo": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200",
       "shortDescription": "An event to encourage students to explore, research, and present innovative ideas in various fields of technology and science.",
@@ -363,7 +399,7 @@
         "Paper Review: Submitted papers are screened for originality, relevance, and proper formatting.",
         "Technical Assessment: Judges evaluate the technical depth, innovation, and practical significance of the work.",
         "Presentation Evaluation: Participants are assessed on clarity, confidence, slide design, and time management.",
-        "Q&A Session: Judges test the participants’ understanding and ability to defend their ideas.",
+        "Q&A Session: Judges test the participants' understanding and ability to defend their ideas.",
         "Final Scoring: Scores from all judges are compiled, and winners are decided based on overall performance."
       ],
       "Contact": {
@@ -374,13 +410,17 @@
     },
     {
       "id": "CyberCrime",
-      "title": "Murder Mystery – One Crime. A Hundred Suspects. One Winner",
+      "title": "Murder Mystery",
+      "tagline": "One Crime. A Hundred Suspects. One Winner",
       "category": "Cyber Crime",
       "date": "October 31 - November 01, 2025",
-      "participants": "Max 3 members per team",
+      "teamSize": {
+        "min": 1,
+        "max": 3
+      },
       "registrationFee": "200",
       "logo": "https://i.pinimg.com/1200x/2f/7e/3d/2f7e3dee2cf9e452805ddc58cce5b380.jpg",
-      "shortDescription": "An immersive investigative challenge that puts participants’ logic, intuition, and teamwork to the ultimate test to solve a mysterious crime.",
+      "shortDescription": "An immersive investigative challenge that puts participants' logic, intuition, and teamwork to the ultimate test to solve a mysterious crime.",
       "Rules & Regulations": [
         "Each team can have maximum of 3 members.",
         "All members must be enrolled students of the participating college.",
@@ -388,22 +428,17 @@
         "Registration Fee: ₹200 per Team"
       ],
       "Themes, Guidelines & Instructions": [
-        "Participants can choose one theme from the three broad themes:",
-        "Smart Society — AI and Prompt Engineering for civic intelligence and public services",
-        "Health & Wellbeing — AI-powered solutions for healthcare, wellness, and accessibility.",
-        "Reimagine Commerce/Finance — AI-driven innovations for industrial/private sector trade, finance, or personalized commerce.",
         "--- **GUIDELINES** ---",
         "Attention to clues, evidence collection, and logical reasoning will be part of the evaluation criteria.",
         "Logical justification of every conclusion drawn will be essential; baseless guesses or random assumptions will not be considered valid.",
         "Attention to minor details and careful sequencing of events will be advantageous in uncovering the true culprit.",
         "Integrity and fair play are expected from all participants; any form of external assistance or disruption to other teams will lead to disqualification.",
-        "Mentors available for technical guidance",
         "Clues may be presented in various forms such as written evidence, visual hints, or character interactions; participants must remain alert and adaptive to all formats.",
         "Each team must interpret the evidence in a systematic manner to reconstruct the chain of events leading to the crime.",
         "The ultimate objective is to accurately identify the murderer and provide a logical explanation supporting the deduction."
       ],
       "Abstract and Deliverables": [
-        "Murder Mystery — One Crime. A Hundred Suspects. One Winner” is an immersive investigative challenge that puts participants’ logic, intuition, and teamwork to the ultimate test.",
+        "Murder Mystery — One Crime. A Hundred Suspects. One Winner is an immersive investigative challenge that puts participants' logic, intuition, and teamwork to the ultimate test.",
         "Stepping into the role of detectives, participants must decode clues, analyze evidence, and unravel a tangled web of lies to uncover the truth behind a mysterious crime.",
         "The event demands sharp observation, critical thinking, and the ability to separate fact from deception.",
         "Every clue, statement, and twist will push participants to think deeper and connect the dots with precision and reasoning.",
@@ -419,10 +454,14 @@
     },
     {
       "id": "AeroExpo",
-      "title": "AERO EXPO - The sky is not the limit, it’s just the beginning",
+      "title": "AERO EXPO",
+      "tagline": "The sky is not the limit, it's just the beginning",
       "category": "AeroExpo",
       "date": "October 31 - November 01, 2025",
-      "participants": "Max 3 members per team",
+      "teamSize": {
+        "min": 1,
+        "max": 3
+      },
       "registrationFee": "400",
       "logo": "https://www.virtual-fly.com/wp-content/uploads/AERO-2.png",
       "shortDescription": "A flagship exhibition dedicated to showcasing innovative models, working prototypes, and detailed exhibits related to Aerospace Engineering, Aviation technology, and related disciplines.",
@@ -454,13 +493,17 @@
     },
     {
       "id": "RCSimulator",
-      "title": "RC Simulator - The sky is not the limit, it’s just the beginning",
+      "title": "RC Simulator",
+      "tagline": "The sky is not the limit, it's just the beginning",
       "category": "RC Simulator",
       "date": "October 31 - November 01, 2025",
-      "participants": "Max 3 members per team",
+      "teamSize": {
+        "min": 1,
+        "max": 3
+      },
       "registrationFee": "300",
       "logo": "https://play-lh.googleusercontent.com/2rzvThYF9et3nXIr0m04iTOy54IdRWBpwvMxc6oHWqRHRop6Jm8nMKA1Am5s7lRLbR0=w526-h296-rw",
-      "shortDescription": "Tests participants’ piloting precision and control in a virtual environment. It evaluates flight maneuverability, quick decision-making, and understanding of aerodynamics.",
+      "shortDescription": "Tests participants' piloting precision and control in a virtual environment. It evaluates flight maneuverability, quick decision-making, and understanding of aerodynamics.",
       "Rules & Regulations": [
         "Maximum Team Size: Three members per team.",
         "Registration Fee: ₹300 per team"

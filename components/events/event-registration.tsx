@@ -1,7 +1,7 @@
 // components/events/event-registration.tsx
 "use client";
 
-import { useState, useEffect } from "react"; // ADDED: useEffect for better state initialization
+import { useState, useEffect } from "react";
 import { db } from "@/lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { GL } from "../gl";
@@ -17,31 +17,12 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
   const [hovering, setHovering] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // Parse team size
-  const parseTeamSize = (sizeStr: string) => {
-    // CHANGE: sizeStr is now event.participants
-    if (!sizeStr) return { min: 1, max: 1 }; // Default fallback
-    
-    if (sizeStr.toLowerCase().includes("individual")) {
-      return { min: 1, max: 1 };
-    }
-    const match = sizeStr.match(/(\d+)-(\d+)/);
-    if (match) {
-      return { min: parseInt(match[1]), max: parseInt(match[2]) };
-    }
-    const singleMatch = sizeStr.match(/(\d+)/);
-    if (singleMatch) {
-      const num = parseInt(singleMatch[1]);
-      return { min: num, max: num };
-    }
-    return { min: 2, max: 4 }; 
-  };
-
-  const teamSizeLimits = parseTeamSize(event.participants);
+  // Get team size limits from the new teamSize object
+  const teamSizeLimits = event.teamSize || { min: 1, max: 1 };
   
-  const [teamMemberCount, setTeamMemberCount] = useState(teamSizeLimits.min); 
+  const [teamMemberCount, setTeamMemberCount] = useState(teamSizeLimits.min);
 
-  // 3. **CHANGE**: Initialize formData teamMembers based on the *initial* teamMemberCount
+  // Initialize formData with correct team member array
   const [formData, setFormData] = useState(() => ({
     teamLeader: {
       name: "",
@@ -50,33 +31,29 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
       email: "",
       phone: ""
     },
-    teamMembers: Array(teamSizeLimits.min - 1).fill(null).map(() => ({ // Use min for initial state
+    teamMembers: Array(teamSizeLimits.min - 1).fill(null).map(() => ({
       name: "", 
       rollNumber: "" 
     }))
   }));
   
-  // Use useEffect to ensure formData.teamMembers array length is correct when the component mounts
-  // This is a safety measure to sync the state on first render.
+  // Update team members array when teamMemberCount changes
   useEffect(() => {
-      setFormData(prev => ({
-          ...prev,
-          teamMembers: Array(teamMemberCount - 1).fill(null).map((_, index) => {
-              // Preserve existing data for members if possible, otherwise use empty object
-              const existingMember = prev.teamMembers[index] || {};
-              return { 
-                  name: existingMember.name || "", 
-                  rollNumber: existingMember.rollNumber || "" 
-              };
-          })
-      }));
-  }, [teamMemberCount]); // Only run when teamMemberCount changes
+    setFormData(prev => ({
+      ...prev,
+      teamMembers: Array(teamMemberCount - 1).fill(null).map((_, index) => {
+        const existingMember = prev.teamMembers[index] || {};
+        return { 
+          name: existingMember.name || "", 
+          rollNumber: existingMember.rollNumber || "" 
+        };
+      })
+    }));
+  }, [teamMemberCount]);
 
   const handleTeamSizeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newSize = parseInt(e.target.value);
     setTeamMemberCount(newSize);
-    
-    // The useEffect hook above will handle updating the teamMembers array in formData
   };
 
   const handleLeaderChange = (field: string, value: string) => {
@@ -89,7 +66,6 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
   const handleMemberChange = (index: number, field: string, value: string) => {
     setFormData(prev => {
       const newMembers = [...prev.teamMembers];
-      // Safely update the specific member
       newMembers[index] = { ...newMembers[index], [field]: value };
       return { ...prev, teamMembers: newMembers };
     });
@@ -136,15 +112,14 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
     setLoading(true);
 
     try {
-      // Save to Firebase
-       const registrationData = {
+      // Save to Firebase - using only event.title (without tagline)
+      const registrationData = {
         eventId: event.id,
-        eventTitle: event.title,
+        eventTitle: event.title, // This now contains only the event name
         eventCategory: event.category,
-      
         timestamp: new Date().toISOString(),
         teamSize: teamMemberCount,
-        participants: event.participants,
+        teamSizeLimits: teamSizeLimits,
         teamLeader: formData.teamLeader,
         teamMembers: formData.teamMembers,
         registrationFee: parseFloat(event.registrationFee) || 0,
@@ -164,6 +139,14 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
     } finally {
       setLoading(false);
     }
+  };
+
+  // Format team size display
+  const getTeamSizeDisplay = () => {
+    if (teamSizeLimits.min === teamSizeLimits.max) {
+      return `${teamSizeLimits.min} ${teamSizeLimits.min === 1 ? 'member' : 'members'}`;
+    }
+    return `${teamSizeLimits.min}-${teamSizeLimits.max} members`;
   };
 
   return (
@@ -188,10 +171,14 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
           <h1 className="text-4xl sm:text-5xl font-sentient font-extrabold mb-2">
             Register for {event.title}
           </h1>
+          {event.tagline && (
+            <p className="text-xl text-foreground/70 mb-4 italic">
+              {event.tagline}
+            </p>
+          )}
           <div className="font-mono text-sm text-foreground/60 space-y-1">
-            {/* 4. **CHANGE**: Display event.participants instead of event.teamSize */}
-            <div>Team Size: **{event.participants}**</div>
-            <div>Registration Fee: **₹{event.registrationFee}**</div>
+            <div>Team Size: {getTeamSizeDisplay()}</div>
+            <div>Registration Fee: ₹{event.registrationFee}</div>
           </div>
         </div>
 
@@ -205,7 +192,6 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
             onMouseLeave={() => setHovering(false)}
           >
             <Pill className="mb-6">TEAM SIZE</Pill>
-            {/* Show selector only if min and max are different */}
             {teamSizeLimits.min !== teamSizeLimits.max ? (
               <div className="flex items-center gap-4">
                 <label className="font-mono text-sm text-foreground/80">
@@ -227,7 +213,7 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
               </div>
             ) : (
               <p className="font-mono text-base text-foreground/80">
-                **Team Size is fixed at {teamSizeLimits.min} member{teamSizeLimits.min > 1 ? 's' : ''}.**
+                Team Size is fixed at {teamSizeLimits.min} member{teamSizeLimits.min > 1 ? 's' : ''}.
               </p>
             )}
           </section>
