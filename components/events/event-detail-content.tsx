@@ -19,7 +19,7 @@ export default function EventDetailContent({ event }: EventDetailContentProps) {
   const contactKey = "Contact";
   
   return (
-    <div className="relative py-20 px-4">
+    <div className="relative py-0 px-4">
       <GL hovering={hovering} />
       
       <div className="container mx-auto relative z-10 max-w-5xl">

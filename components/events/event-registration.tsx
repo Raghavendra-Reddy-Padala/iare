@@ -34,7 +34,8 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
     teamMembers: Array(teamSizeLimits.min - 1).fill(null).map(() => ({
       name: "", 
       rollNumber: "" 
-    }))
+    })),
+    battleLANGame: "" as string
   }));
   
   // Update team members array when teamMemberCount changes
@@ -71,8 +72,15 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
     });
   };
 
+  const handleBattleLANGameSelect = (game: string) => {
+    setFormData(prev => ({
+      ...prev,
+      battleLANGame: game
+    }));
+  };
+
   const validateForm = () => {
-    const { teamLeader, teamMembers } = formData;
+    const { teamLeader, teamMembers, battleLANGame } = formData;
     
     if (!teamLeader.name || !teamLeader.college || !teamLeader.rollNumber || 
         !teamLeader.email || !teamLeader.phone) {
@@ -89,6 +97,12 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
     const phoneRegex = /^[0-9]{10}$/;
     if (!phoneRegex.test(teamLeader.phone)) {
       alert("Please enter a valid 10-digit phone number");
+      return false;
+    }
+
+    // BattleLAN specific validation
+    if (event.id === "LANGaming" && !battleLANGame) {
+      alert("Please select one game for BattleLAN");
       return false;
     }
 
@@ -113,9 +127,9 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
 
     try {
       // Save to Firebase - using only event.title (without tagline)
-      const registrationData = {
+      const registrationData: any = {
         eventId: event.id,
-        eventTitle: event.title, // This now contains only the event name
+        eventTitle: event.title,
         eventCategory: event.category,
         timestamp: new Date().toISOString(),
         teamSize: teamMemberCount,
@@ -127,6 +141,11 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
         paymentCompleted: false,
         registrationStatus: "pending"
       };
+
+      // Add battleLANGames only for LANGaming event
+      if (event.id === "LANGaming") {
+        registrationData.battleLANGame = formData.battleLANGame;
+      }
 
       const docRef = await addDoc(collection(db, "registrations"), registrationData);
       console.log("Registration saved with ID:", docRef.id);
@@ -340,12 +359,58 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
                           className="w-full bg-background border border-foreground/20 px-4 py-3 font-mono text-sm focus:outline-none focus:border-foreground/40"
                           placeholder="Member's roll number"
                           required
-                        />
+                />
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
+            </section>
+          )}
+
+          {/* BattleLAN Game Selection - Only for LANGaming event */}
+          {event.id === "LANGaming" && (
+            <section 
+              className="border border-foreground/20 p-8 bg-foreground/5"
+              onMouseEnter={() => setHovering(true)}
+              onMouseLeave={() => setHovering(false)}
+            >
+              <Pill className="mb-6">SELECT GAME *</Pill>
+              <p className="font-mono text-sm text-foreground/60 mb-6">
+                Choose one game you want to participate in
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {["BGMI", "FREE FIRE", "CODE RELAY", "TECH DUMB CHARADES"].map((game) => (
+                  <label
+                    key={game}
+                    className={`
+                      flex items-center gap-3 p-4 border cursor-pointer transition-all
+                      ${formData.battleLANGame === game
+                        ? "border-foreground bg-foreground/10"
+                        : "border-foreground/20 hover:border-foreground/40"
+                      }
+                    `}
+                  >
+                    <input
+                      type="radio"
+                      name="battleLANGame"
+                      checked={formData.battleLANGame === game}
+                      onChange={() => handleBattleLANGameSelect(game)}
+                      className="w-5 h-5 accent-foreground"
+                    />
+                    <span className="font-mono text-sm">{game}</span>
+                  </label>
+                ))}
+              </div>
+
+              {formData.battleLANGame && (
+                <div className="mt-4 p-4 border border-foreground/20 bg-background">
+                  <p className="font-mono text-xs text-foreground/60">
+                    Selected: {formData.battleLANGame}
+                  </p>
+                </div>
+              )}
             </section>
           )}
 
