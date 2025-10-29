@@ -34,13 +34,11 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
       const num = parseInt(singleMatch[1]);
       return { min: num, max: num };
     }
-    return { min: 2, max: 4 }; // Default if parsing fails
+    return { min: 2, max: 4 }; 
   };
 
-  // 1. **CHANGE**: Use 'participants' instead of 'teamSize'
   const teamSizeLimits = parseTeamSize(event.participants);
   
-  // 2. **CHANGE**: Initialize teamMemberCount with the minimum size
   const [teamMemberCount, setTeamMemberCount] = useState(teamSizeLimits.min); 
 
   // 3. **CHANGE**: Initialize formData teamMembers based on the *initial* teamMemberCount
@@ -143,9 +141,7 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
         eventId: event.id,
         eventTitle: event.title,
         eventCategory: event.category,
-        eventDate: event.date || null,
-  eventTime: event.time || null,
-  eventVenue: event.venue || null,
+      
         timestamp: new Date().toISOString(),
         teamSize: teamMemberCount,
         participants: event.participants,
