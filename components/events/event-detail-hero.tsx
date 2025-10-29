@@ -35,12 +35,11 @@ export default function EventDetailHero({ event }: EventDetailHeroProps) {
               {event.title}
             </h1>
             
-            <p className="text-2xl font-mono text-foreground/60 italic mb-8">
-              {event.tagline}
-            </p>
+            {/* REMOVED: event.tagline */}
             
             <p className="font-mono text-lg text-foreground/80 mb-8 leading-relaxed">
-              {event.fullDescription}
+              {/* CHANGED: event.fullDescription to event.detailedDescription (if present) or event.shortDescription */}
+              {event.detailedDescription || event.shortDescription}
             </p>
 
             {/* Quick Info */}
@@ -48,25 +47,20 @@ export default function EventDetailHero({ event }: EventDetailHeroProps) {
               <div className="flex items-start gap-4">
                 <span className="text-2xl">📅</span>
                 <div>
-                  <div className="font-mono text-sm text-foreground/60">Date & Time</div>
+                  <div className="font-mono text-sm text-foreground/60">Date</div>
                   <div className="font-sentient text-lg font-bold">{event.date}</div>
-                  <div className="font-mono text-sm text-foreground/60">{event.time}</div>
+                  {/* REMOVED: event.time */}
                 </div>
               </div>
               
-              <div className="flex items-start gap-4">
-                <span className="text-2xl">📍</span>
-                <div>
-                  <div className="font-mono text-sm text-foreground/60">Venue</div>
-                  <div className="font-sentient text-lg font-bold">{event.venue}</div>
-                </div>
-              </div>
+              {/* REMOVED: event.venue */}
               
               <div className="flex items-start gap-4">
                 <span className="text-2xl">👥</span>
                 <div>
                   <div className="font-mono text-sm text-foreground/60">Team Size</div>
-                  <div className="font-sentient text-lg font-bold">{event.teamSize}</div>
+                  {/* CHANGED: event.teamSize to event.participants */}
+                  <div className="font-sentient text-lg font-bold">{event.participants}</div>
                 </div>
               </div>
               
@@ -74,13 +68,13 @@ export default function EventDetailHero({ event }: EventDetailHeroProps) {
                 <span className="text-2xl">💰</span>
                 <div>
                   <div className="font-mono text-sm text-foreground/60">Registration Fee</div>
-                  <div className="font-sentient text-lg font-bold">{event.registrationFee}</div>
+                  <div className="font-sentient text-lg font-bold">₹{event.registrationFee}</div>
                 </div>
               </div>
             </div>
 
-            {/* Register Button */}
-            <Link href="https://forms.techmocha.in" target="_blank">
+            {/* Register Button - Updated to link to register page */}
+            <Link href={`/events/${event.id}/register`}>
               <Button 
                 className="px-12 py-6 text-lg"
                 onMouseEnter={() => setHovering(true)}
@@ -99,6 +93,7 @@ export default function EventDetailHero({ event }: EventDetailHeroProps) {
           >
             <div className="border border-foreground/20 p-12 bg-foreground/5">
               <Image
+                // CHANGED: src from event.image to event.logo
                 src={event.logo}
                 alt={event.title}
                 width={500}

@@ -12,14 +12,13 @@ export default function EventsList() {
   const [hovering, setHovering] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   
-  const categories = ["All", "Technical", "Robotics", "Design", "Workshop", "Gaming", "Entrepreneurship"];
   
   const filteredEvents = selectedCategory === "All" 
     ? eventsData.events 
     : eventsData.events.filter(event => event.category === selectedCategory);
   
   return (
-    <div className="relative min-h-screen py-20 px-4">
+    <div className="relative min-h-screen py-35 px-4">
       <GL hovering={hovering} />
       
       <div className="container mx-auto relative z-10">
@@ -34,7 +33,7 @@ export default function EventsList() {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16">
+        {/* <div className="flex flex-wrap justify-center gap-4 mb-16">
           {categories.map((category) => (
             <button
               key={category}
@@ -50,7 +49,7 @@ export default function EventsList() {
               {category}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Events Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -68,6 +67,7 @@ export default function EventsList() {
                 {/* Event Logo */}
                 <div className="relative w-full h-48 bg-foreground/5 flex items-center justify-center p-8">
                   <Image
+                    // CHANGED: image to logo
                     src={event.logo}
                     alt={event.title}
                     width={200}
@@ -87,11 +87,10 @@ export default function EventsList() {
                     {event.title}
                   </h3>
                   
-                  <p className="text-sm font-mono text-foreground/60 mb-4 italic">
-                    {event.tagline}
-                  </p>
+                  {/* REMOVED: event.tagline - field does not exist in new JSON */}
                   
                   <p className="font-mono text-sm text-foreground/70 mb-4 flex-1">
+                    {/* CHANGED: event.description to event.shortDescription */}
                     {event.shortDescription}
                   </p>
 
@@ -101,23 +100,27 @@ export default function EventsList() {
                       <span>📅</span>
                       <span>{event.date}</span>
                     </div>
-                    <div className="flex items-center gap-2 font-mono text-xs text-foreground/60">
-                      <span>📍</span>
-                      <span>{event.venue}</span>
-                    </div>
+                    {/* REMOVED: event.venue - field does not exist in new JSON */}
                     <div className="flex items-center gap-2 font-mono text-xs text-foreground/60">
                       <span>👥</span>
-                      <span>{event.teamSize}</span>
+                      {/* CHANGED: event.teamSize to event.participants */}
+                      <span>{event.participants}</span>
+                    </div>
+                    <div className="flex items-center gap-2 font-mono text-xs text-foreground/60">
+                      <span>💰</span>
+                      {/* NEW: Display Registration Fee */}
+                      <span>₹{event.registrationFee} Fee</span>
                     </div>
                   </div>
 
-                  {/* Prize Money */}
+                  {/* REMOVED: Prize Money section as structure changed */}
+                  {/* Kept a minimal separator */}
                   <div className="border-t border-foreground/20 pt-4">
-                    <div className="text-lg font-sentient font-bold text-primary">
-                      {event.prizeMoney.first}
-                    </div>
                     <div className="text-xs font-mono text-foreground/60">
-                      Prize Pool
+                      <span className="text-lg font-sentient font-bold text-primary mr-1">
+                         ₹{event.registrationFee}
+                      </span>
+                      Registration
                     </div>
                   </div>
 

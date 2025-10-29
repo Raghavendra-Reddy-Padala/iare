@@ -157,7 +157,7 @@ export default function Footer() {
     className="h-auto p-0 font-mono text-xs text-foreground/40 hover:text-foreground/60"
     onClick={() => window.open('https://techmocha.in', '_blank')}
   >
-[     TechMocha     ]
+[       TechMocha       ]
   </Button>
 </div>
       </div>

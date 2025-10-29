@@ -1,364 +1,490 @@
 {
   "events": [
     {
-      "id": "hackathon-2025",
-      "title": "Aero 2025",
-      "category": "Technical",
-      "logo": "/events/logos/aero.jpg",
-      "tagline": "Code. Innovate. Transform.",
-      "shortDescription": "24-hour coding marathon to build innovative solutions",
-      "fullDescription": "Join the ultimate coding challenge where teams compete to build groundbreaking applications. Work with cutting-edge technologies, collaborate with brilliant minds, and turn your ideas into reality within 24 hours.",
-      "coverImage": "/events/logos/aero.jpg",
-      "bgColor": "from-blue-500/20 to-cyan-500/20",
-      "date": "March 15-16, 2025",
-      "time": "9:00 AM - 9:00 AM (Next Day)",
-      "venue": "CSE Block, Labs 301-305",
-      "teamSize": "2-4 members",
-      "prizeMoney": {
-        "first": "₹50,000",
-        "second": "₹30,000",
-        "third": "₹20,000"
-      },
-      "registrationFee": "₹200 per team",
-      "rules": [
-        "Teams must consist of 2-4 members from any college",
-        "All team members must be present during registration",
-        "Use of any programming language and framework is allowed",
-        "Projects must be original work created during the hackathon",
-        "Teams must use provided API keys and not bring pre-written code",
-        "Internet access will be provided but external hardware must be approved",
-        "Final submission must include working demo, code repository, and presentation",
-        "Judges' decision will be final and binding"
+      "id": "Webathon",
+      "title": "WebNova - Igniting the Future Web",
+      "category": "Webathon",
+      "date": "October 31 - November 01, 2025",
+      "participants": "2-4 per team",
+      "registrationFee": "300",
+      "logo": "https://media.deloitte.com/is/image/deloitte/800-600-governance-privacy",
+      "shortDescription": "WebNova is an innovative webathon designed to inspire creativity and problem-solving through Prompt Engineering and AI-powered tools.",
+      "Rules & Regulations": [
+        "Each team can have 2 to 4 members.",
+        "Participants can be from any domain and any Year",
+        "Each participant can be part of only one team",
+        "Registration Fee: ₹300 per Team"
       ],
-      "rounds": [
-        {
-          "name": "Registration & Team Formation",
-          "description": "Register your team and finalize members"
-        },
-        {
-          "name": "Problem Statement Release",
-          "description": "Choose from 5+ problem statements across different domains"
-        },
-        {
-          "name": "Development Phase",
-          "description": "24 hours of intense coding and building"
-        },
-        {
-          "name": "Final Presentation",
-          "description": "Present your solution to judges (10 min presentation + 5 min Q&A)"
-        }
+      "Themes, Guidelines & Instructions": [
+        "Participants can choose one theme from the three broad themes:",
+        "Smart Society — AI and Prompt Engineering for civic intelligence and public services",
+        "Health & Wellbeing — AI-powered solutions for healthcare, wellness, and accessibility.",
+        "Reimagine Commerce/Finance — AI-driven innovations for industrial/private sector trade, finance, or personalized commerce.",
+        "--- **GUIDELINES** ---",
+        "Refreshments and meals will be provided",
+        "Workspace and power outlets are available",
+        "Mentors are available for technical guidance",
+        "Judging is done based on innovation, Functionalities used, Design, imppact and presentation",
+        "Winners will be announced on the same day"
       ],
-      "judging": [
-        "Innovation & Creativity (30%)",
-        "Technical Implementation (25%)",
-        "User Experience & Design (20%)",
-        "Business Viability (15%)",
-        "Presentation Quality (10%)"
+      "Abstract and Deliverables": [
+        "Detailed abstracts and problem statements for each theme will be sent to the registered mail id one day before the event.",
+        "Teams must work on the problem statement provided for their chosen theme.",
+        "Participants are expected to develop web-based platforms — working web pages or web applications that address the problem.",
+        "Proposed solutions must be original and built within the event duration.",
+        "Each team must submit:",
+        "A working web page/web application hosted online (any platform)",
+        "Source code and documentation of major prompts (GitHub link or downloadable files).",
+        "A short presentation/demo explaining of 5-10mins of the solution and how it addresses the problem statement."
       ],
-      "contact": {
-        "name": "Technical Head",
+      "Contact": {
+        "name": "Webathon Coordinator",
         "phone": "+91 XXXXX XXXXX",
-        "email": "hackathon@iare.ac.in"
+        "email": "webnova@iare.ac.in"
       }
     },
     {
-      "id": "robo-wars",
-      "title": "aiml",
-      "category": "Robotics",
-      "logo": "/events/logos/aiml.jpg",
-      "tagline": "Battle of the Bots",
-      "shortDescription": "Ultimate robot combat competition",
-      "fullDescription": "Design and build combat robots to compete in intense battles. Test your engineering skills, strategic thinking, and robot design prowess in this action-packed competition.",
-      "coverImage": "/events/logos/aiml.jpg",
-      "bgColor": "from-red-500/20 to-orange-500/20",
-      "date": "March 16, 2025",
-      "time": "10:00 AM - 6:00 PM",
-      "venue": "Robotics Arena, Ground Floor",
-      "teamSize": "3-5 members",
-      "prizeMoney": {
-        "first": "₹40,000",
-        "second": "₹25,000",
-        "third": "₹15,000"
-      },
-      "registrationFee": "₹300 per team",
-      "rules": [
-        "Robot weight must not exceed 25 kg",
-        "Maximum dimensions: 75cm x 75cm x 75cm",
-        "Autonomous or manual control allowed",
-        "No projectile weapons or liquid weapons",
-        "Sharp weapons and pneumatic systems allowed (within safety limits)",
-        "Teams must bring their own remote controls and batteries",
-        "Arena dimensions: 20ft x 20ft with metallic floor",
-        "Each match duration: 3 minutes",
-        "Weapons must pass safety inspection before competition"
+      "id": "CyberSecurity",
+      "title": "House of Echoes - The evidence isn’t in blood — it’s in bytes",
+      "category": "Cyber Security",
+      "date": "October 31 - November 01, 2025",
+      "participants": "Max 3 members per team",
+      "registrationFee": "149",
+      "logo": "https://media.licdn.com/dms/image/v2/D4E22AQFMT-L7TDcxWw/feedshare-shrink_800/feedshare-shrink_800/0/1703223822931?e=2147483647&v=beta&t=gSRHA81ogxul4Ax6JaAfNw-EpkpOIRS3Oz_dejAstz8",
+      "shortDescription": "Investigative cybersecurity event that challenges participants to uncover hidden digital crimes through logic, analysis, and forensic reasoning.",
+      "Rules & Regulations": [
+        "max 3 members per team.",
+        "149/- per team.",
+        "Inter-department, inter-year and inter-college teams allowed",
+        "Must bring at least 1 laptop per team.",
+        "Winners will be decided based on methodology and factual presentation.",
+        "All participants must maintain confidentiality of the case materials",
+        "Internet access and AI tools can be used during the game."
       ],
-      "rounds": [
-        {
-          "name": "Technical Inspection",
-          "description": "Robot safety and specification verification"
-        },
-        {
-          "name": "Qualifying Rounds",
-          "description": "One-on-one battles, knockout format"
-        },
-        {
-          "name": "Semi Finals",
-          "description": "Top 4 robots compete"
-        },
-        {
-          "name": "Grand Finale",
-          "description": "Ultimate showdown for the championship"
-        }
+      "Themes, Guidelines & Instructions": [
+        "Realistic Scenario Design: Each case mimics authentic cybersecurity events with believable data artifacts.",
+        "Layered Clues: Every round integrates logical, technical, and behavioral aspects of cybercrime.",
+        "Collaborative Investigation: Participants may work in teams, mirroring real incident response environments.",
+        "Awareness Focus: Reinforces cyber hygiene, responsible disclosure, and the ethics of digital investigation.",
+        "--- **GUIDELINES** ---",
+        "Submit robot specifications by October 20, 2025",
+        "Practice arena available one day before event",
+        "Repair tools and workspace provided",
+        "Battery charging stations available",
+        "Follow all safety protocols strictly",
+        "Spare parts recommended",
+        "Team captain must attend technical briefing"
       ],
-      "judging": [
-        "Aggression (30%)",
-        "Damage (25%)",
-        "Control (20%)",
-        "Strategy (15%)",
-        "Design Innovation (10%)"
+      "Abstract and Deliverables": [
+        "The House of Echoes event aims to promote analytical thinking, ethical investigation skills, and an applied understanding of cybersecurity.",
+        "It serves as a platform for students to explore the human, technical, and strategic dimensions of cybercrime, strengthening both awareness and technical proficiency."
       ],
-      "contact": {
-        "name": "Robotics Coordinator",
+      "Contact": {
+        "name": "Cyber Security Coordinator",
         "phone": "+91 XXXXX XXXXX",
-        "email": "robowars@iare.ac.in"
+        "email": "cybersecurity@iare.ac.in"
       }
     },
     {
-      "id": "web-design-championship",
-      "title": "civil",
-      "category": "Design",
-      "logo": "/events/logos/civil.jpg",
-      "tagline": "Design the Future",
-      "shortDescription": "Create stunning web experiences",
-      "fullDescription": "Showcase your web design and development skills by creating beautiful, functional, and innovative websites. Focus on user experience, visual design, and technical implementation.",
-      "coverImage": "/events/logos/civil.jpg",
-      "bgColor": "from-purple-500/20 to-pink-500/20",
-      "date": "March 15, 2025",
-      "time": "2:00 PM - 6:00 PM",
-      "venue": "IT Lab, 4th Floor",
-      "teamSize": "1-3 members",
-      "prizeMoney": {
-        "first": "₹30,000",
-        "second": "₹20,000",
-        "third": "₹10,000"
-      },
-      "registrationFee": "₹150 per team",
-      "rules": [
-        "Teams can have 1-3 members",
-        "Use any framework or technology (React, Vue, Angular, vanilla JS, etc.)",
-        "Website must be responsive and work on all devices",
-        "No pre-built templates allowed - all code must be original",
-        "Must include at least 3 pages/sections",
-        "Judging based on design, functionality, and innovation",
-        "Final submission must include live demo and code repository",
-        "Plagiarism will lead to immediate disqualification"
+      "id": "TreasureHunt",
+      "title": "Techno Hunt - Divide And Conquer Beyond Your Limits",
+      "category": "Treasure Hunt",
+      "date": "October 31 - November 01, 2025",
+      "participants": "4 per team",
+      "registrationFee": "200",
+      "logo": "https://img.freepik.com/free-photo/flat-lay-hand-holding-magnifying-glass_23-2149617673.jpg?semt=ais_incoming&w=740&q=80",
+      "shortDescription": "A thrilling 2-day technical treasure hunt that blends brainpower, coding, and adventure!",
+      "Rules & Regulations": [
+        "Team size: 4 members",
+        "The hunt will have multiple rounds with technical and logical clues to solve.",
+        "Mobile phones are not allowed during the event.",
+        "A time limit will be given, and the team completing all tasks first will be the winner.",
+        "The registration fee is 200/- per team."
       ],
-      "rounds": [
-        {
-          "name": "Theme Announcement",
-          "description": "Website theme and requirements revealed"
-        },
-        {
-          "name": "Development Phase",
-          "description": "4 hours to design and develop"
-        },
-        {
-          "name": "Presentation",
-          "description": "5-minute demo and walkthrough"
-        }
+      "Themes, Guidelines & Instructions": [
+        "Tech + Adventure",
+        "Coding + Mystery Solving",
+        "Treasure Hunt + Real-Time Strategy",
+        "Teamwork + Competition",
+        "--- **GUIDELINES** ---",
+        "Teams must follow the instructions of coordinators throughout the event.",
+        "Clue sharing between teams is strictly prohibited.",
+        "Judges’ and organizers’ decisions are final and binding.",
+        "Fair play is mandatory – any form of cheating, plagiarism, or unfair assistance will lead to disqualification",
+        "Judges decision is final"
       ],
-      "judging": [
-        "Visual Design & Aesthetics (30%)",
-        "User Experience (25%)",
-        "Responsiveness (20%)",
-        "Code Quality (15%)",
-        "Innovation (10%)"
+      "Abstract and Deliverables": [
+        "The event unfolds in two intense phases:",
+        "Day 1: The Eliminations – Compete through mini technical quizzes, code-breaking challenges, and online puzzles to qualify for the final round.",
+        "Day 2: The Grand Hunt – Embark on an immersive indoor-outdoor adventure, completing real-time missions, solving cryptic tech clues, and racing against time to find the final treasure."
       ],
-      "contact": {
-        "name": "Design Head",
+      "Contact": {
+        "name": "Treasure Hunt Coordinator",
         "phone": "+91 XXXXX XXXXX",
-        "email": "webdesign@iare.ac.in"
+        "email": "technohunt@iare.ac.in"
       }
     },
     {
-      "id": "startup-pitch-competition",
-      "title": "Cyber security",
-      "category": "Entrepreneurship",
-      "logo": "/events/logos/cs.jpg",
-      "tagline": "Pitch Your Dream",
-      "shortDescription": "Present your startup idea to investors",
-      "fullDescription": "Have a groundbreaking business idea? Present your startup pitch to industry experts and investors. Win funding, mentorship, and the opportunity to turn your vision into reality.",
-      "coverImage": "/events/logos/cs.jpg",
-      "bgColor": "from-green-500/20 to-emerald-500/20",
-      "date": "March 17, 2025",
-      "time": "11:00 AM - 4:00 PM",
-      "venue": "Seminar Hall A",
-      "teamSize": "2-5 members",
-      "prizeMoney": {
-        "first": "₹1,00,000 + Incubation Support",
-        "second": "₹60,000 + Mentorship",
-        "third": "₹40,000"
-      },
-      "registrationFee": "₹200 per team",
-      "rules": [
-        "Teams must have 2-5 members",
-        "Startup idea must be original and innovative",
-        "Prepare 5-minute pitch presentation",
-        "Business plan must be submitted before presentation",
-        "Q&A session will follow each pitch (5 minutes)",
-        "Ideas can be from any domain (Tech, Healthcare, Education, etc.)",
-        "Financial projections must be realistic and data-backed",
-        "Teams may be asked for additional documentation"
+      "id": "ConcreteCanoe",
+      "title": "AquaStruct - The Concrete Canoe Challenge",
+      "category": "Concrete Canoe",
+      "date": "October 31 - November 01, 2025",
+      "participants": "1-5 per team",
+      "registrationFee": "300",
+      "logo": "https://viterbischool.usc.edu/wp-content/uploads/2025/05/concrete-canoe.jpg",
+      "shortDescription": "Design, construct, and race a canoe made entirely out of concrete.",
+      "Rules & Regulations": [
+        "Team size: Maximum 5 members per team.",
+        "All members must be enrolled students of the participating college.",
+        "Teams must designate a Team Leader responsible for communication with organizers.",
+        "Registration fee: ₹ 300 / Team"
       ],
-      "rounds": [
-        {
-          "name": "Business Plan Submission",
-          "description": "Submit detailed business plan (deadline: March 10)"
-        },
-        {
-          "name": "Preliminary Screening",
-          "description": "Top 20 teams selected for pitch round"
-        },
-        {
-          "name": "Pitch Presentations",
-          "description": "Present to panel of investors and entrepreneurs"
-        },
-        {
-          "name": "Final Round",
-          "description": "Top 5 teams pitch again with refined presentations"
-        }
+      "Themes, Guidelines & Instructions": [
+        "Teams can use:",
+        "Concrete: Portland cement-based or blended cement.",
+        "Aggregates: Fine aggregates only (for smoother surface and lighter weight).",
+        "Reinforcements: Fibers (steel, polymer, glass), meshes, rods, or combinations.",
+        "Additives:",
+        "Superplasticizers for flowable concrete",
+        "Silica fume or fly ash for higher strength and reduced permeability",
+        "Polymers (latex, epoxy) for improved toughness and water resistance",
+        "--- **GUIDELINES** ---",
+        "Canoes should be structurally stable and buoyant",
+        "Open to creative shapes and aesthetics, but must not exceed max length and weight.",
+        "Surface finish and detailing will be part of evaluation.",
+        "Lightweight, hollow structures are encouraged for better buoyancy."
       ],
-      "judging": [
-        "Innovation & Market Need (30%)",
-        "Business Model Viability (25%)",
-        "Team Capability (20%)",
-        "Financial Projections (15%)",
-        "Pitch Quality (10%)"
+      "Abstract and Deliverables": [
+        "Evaluation is done based on Design & Creativity, Material Innovation, Surface Finish & Detailing, Structural Integrity & Buoyancy"
       ],
-      "contact": {
-        "name": "Entrepreneurship Cell",
+      "Contact": {
+        "name": "Civil Dept. Coordinator",
         "phone": "+91 XXXXX XXXXX",
-        "email": "startup@iare.ac.in"
+        "email": "aquastruct@iare.ac.in"
       }
     },
     {
-      "id": "ai-ml-workshop",
-      "title": "CSE",
-      "category": "Workshop",
-      "logo": "/events/logos/cs.jpg",
-      "tagline": "Master Artificial Intelligence",
-      "shortDescription": "Hands-on workshop on AI and Machine Learning",
-      "fullDescription": "Learn the fundamentals of Artificial Intelligence and Machine Learning from industry experts. Build real-world projects and understand how to implement AI solutions.",
-      "coverImage": "/events/cs.jpg",
-      "bgColor": "from-indigo-500/20 to-blue-500/20",
-      "date": "March 15, 2025",
-      "time": "10:00 AM - 5:00 PM",
-      "venue": "Conference Hall",
-      "teamSize": "Individual",
-      "prizeMoney": {
-        "first": "Certificate of Completion",
-        "second": "Workshop Materials",
-        "third": "Project Template Access"
-      },
-      "registrationFee": "₹500 per person",
-      "rules": [
-        "Bring your own laptop with minimum 8GB RAM",
-        "Basic programming knowledge required (Python preferred)",
-        "Install required software before workshop (list will be provided)",
-        "Attendance is mandatory for certificate",
-        "Workshop materials will be provided digitally",
-        "Hands-on projects must be completed during workshop",
-        "Limited seats available - first come first serve"
+      "id": "PosterPresentation",
+      "title": "EngiVision - Imagine. Innovate. Inspire.",
+      "category": "Poster Presentation",
+      "date": "October 31 - November 01, 2025",
+      "participants": "3-4 per team",
+      "registrationFee": "200",
+      "logo": "https://i.pinimg.com/1200x/00/ea/38/00ea385888c8fcf08c4f3c3ecbb39a5f.jpg",
+      "shortDescription": "Interdisciplinary poster presentation event to ignite creativity, innovation, and technical communication.",
+      "Rules & Regulations": [
+        "Team size: 2-3 members",
+        "₹200 per team",
+        "Open to all streams and branches"
       ],
-      "rounds": [
-        {
-          "name": "Introduction to AI/ML",
-          "description": "Fundamentals and core concepts"
-        },
-        {
-          "name": "Hands-on Session 1",
-          "description": "Building your first ML model"
-        },
-        {
-          "name": "Lunch Break & Networking",
-          "description": "Connect with peers and experts"
-        },
-        {
-          "name": "Hands-on Session 2",
-          "description": "Deep Learning and Neural Networks"
-        },
-        {
-          "name": "Project Work",
-          "description": "Build a complete AI/ML project"
-        }
+      "Themes, Guidelines & Instructions": [
+        "Round 1: Own Theme",
+        "Round 2: Given Theme",
+        "--- **GUIDELINES** ---",
+        "Teams must bring their own laptops or drawing materials.",
+        "Digital or handmade posters are both accepted.",
+        "All entries must be original and free from plagiarism.",
+        "Time slots will be strictly followed for each presentation."
       ],
-      "judging": [],
-      "contact": {
-        "name": "Workshop Coordinator",
+      "Abstract and Deliverables": [
+        "The decision of judges will be final and binding.",
+        "Winners will be judged based on creativity, technical content, clarity, and presentation."
+      ],
+      "Contact": {
+        "name": "Poster Presentation Coordinator",
         "phone": "+91 XXXXX XXXXX",
-        "email": "aiml@iare.ac.in"
+        "email": "engivision@iare.ac.in"
       }
     },
     {
-      "id": "gaming-tournament",
-      "title": "Gaming Tournament",
-      "category": "Gaming",
-      "logo": "/events/logos/cse.jpg",
-      "tagline": "Battle Royale",
-      "shortDescription": "E-sports tournament featuring popular games",
-      "fullDescription": "Compete in the biggest gaming tournament featuring multiple popular titles. Show your gaming skills, strategies, and teamwork to become the champion.",
-      "coverImage": "/events/cse.jpg",
-      "bgColor": "from-yellow-500/20 to-red-500/20",
-      "date": "March 16, 2025",
-      "time": "1:00 PM - 8:00 PM",
-      "venue": "Gaming Arena, IT Block",
-      "teamSize": "Varies by game (1-5)",
-      "prizeMoney": {
-        "first": "₹35,000",
-        "second": "₹20,000",
-        "third": "₹10,000"
-      },
-      "registrationFee": "₹100 per person",
-      "rules": [
-        "Games: BGMI, Valorant, CS:GO, FIFA, and more",
-        "Must bring your own gaming peripherals (mouse, keyboard, headset)",
-        "Team size varies by game type",
-        "Separate tournaments for each game",
-        "All players must follow game-specific rules",
-        "Fair play policy - cheating leads to disqualification",
-        "Matches will be streamed live",
-        "Participants must be present 30 minutes before match"
+      "id": "ProjectExpo",
+      "title": "VisionX - Unleash the power within your ideas",
+      "category": "Project Expo",
+      "date": "October 31 - November 01, 2025",
+      "participants": "3 members per team",
+      "registrationFee": "300",
+      "logo": "https://www.iare.ac.in/sites/default/files/Consortium/2019/1.jpg",
+      "shortDescription": "Showcases innovative projects from all engineering departments, promoting creativity, teamwork, and practical learning.",
+      "Rules & Regulations": [
+        "Team size: 2 members",
+        "All the team members must be present during the project evaluation.",
+        "Teams must designate a Team Leader responsible for communication with organizers.",
+        "Registration fee: ₹ 300/ Team"
       ],
-      "rounds": [
-        {
-          "name": "Registration & Game Selection",
-          "description": "Choose your game and register your team"
-        },
-        {
-          "name": "Group Stage",
-          "description": "Round-robin format in groups"
-        },
-        {
-          "name": "Knockout Stage",
-          "description": "Elimination rounds"
-        },
-        {
-          "name": "Grand Finals",
-          "description": "Best of 3/5 matches for championship"
-        }
+      "Themes, Guidelines & Instructions": [
+        "Any theme is accepted.",
+        "--- **GUIDELINES** ---",
+        "The projects are evaluated by faculty concerning different departments.",
+        "Each team will be give 10mins to present their ideas and showcase their prototypes if designed."
       ],
-      "judging": [
-        "Game Performance",
-        "Team Coordination",
-        "Strategic Play",
-        "Sportsmanship"
+      "Abstract and Deliverables": [
+        "Problem Definition and objective.",
+        "Innovation and Technical approach.",
+        "Design, Methodology and Implementation.",
+        "Presentation and Communication.",
+        "Impact and Sustainability."
       ],
-      "contact": {
-        "name": "Gaming Head",
+      "Contact": {
+        "name": "Project Expo Coordinator",
         "phone": "+91 XXXXX XXXXX",
-        "email": "gaming@iare.ac.in"
+        "email": "visionx@iare.ac.in"
+      }
+    },
+    {
+      "id": "LANGaming",
+      "title": "BattleLAN - Link up. Lock in. Light it up",
+      "category": "LAN Gaming",
+      "date": "October 31 - November 01, 2025",
+      "participants": "3 - 4 members per team ",
+      "registrationFee": "200",
+      "logo": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "shortDescription": "An exciting and competitive LAN gaming event combines the thrill of gaming with the creativity of technology, featuring both technical and non-technical games.",
+      "Rules & Regulations": [
+        "Team Size: 3–4 members per team ",
+        "Registration Fee: ₹200 per team (common for all games) ",
+        "Participants can take part in multiple games, provided scheduling allows. All matches will be conducted on LAN to ensure fair play and stable performance."
+      ],
+      "Themes, Guidelines & Instructions": [
+        "Competitive Gaming and Team Collaboration ",
+        "Coding under Constraints",
+        "Fun Meets Technology",
+        "Creativity and Strategy in Digital Play ",
+        "--- **GUIDELINES** ---",
+        "Each team must consist of 3–4 members.",
+        "Participants must bring their own accessories (headphones, mouse, controller, etc.).",
+        "Internet or external software assistance is not allowed unless specified.",
+        "Teams must maintain discipline and fair play throughout the event.",
+        "Judges’ and organizers’ decisions will be final.",
+        "Late entries will not be accepted once a round has started."
+      ],
+      "Abstract and Deliverables": [
+        "Each game and technical round will have independent scoring criteria:",
+        "BGMI & Free Fire: Survival duration, kill count, and adherence to rules.",
+        "Code Relay: Code correctness, efficiency, and ability to adapt to surprise constraints.",
+        "Tech Dumb Charades: Number of correctly guessed terms and time efficiency. ",
+        "Final rankings will be based on cumulative performance and adherence to event rules."
+      ],
+      "Contact": {
+        "name": "LAN Gaming Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "battlelan@iare.ac.in"
+      }
+    },
+    {
+      "id": "Short Film",
+      "title": "Short Film Contest - Frames of Vision, Tales of Heart",
+      "category": "Short Film",
+      "date": "October 31 - November 01, 2025",
+      "participants": "5 members per team",
+      "registrationFee": "249",
+      "logo": "https://sofy.tv/blog/wp-content/uploads/2018/01/1-41-1200x675.jpg",
+      "shortDescription": "A celebration of creativity and storytelling, giving students a platform to showcase their ideas through films.",
+      "Rules & Regulations": [
+        "Team Size: Maximum of 5 members.",
+        "₹249 per team",
+        "Duration: 3 to 10 minutes (including credits).",
+        "Format: MP4 only.",
+        "Content must be original, positive, and free from vulgar or offensive material."
+      ],
+      "Themes, Guidelines & Instructions": [
+        "Open Theme – choose any meaningful or creative concept.",
+        "--- **GUIDELINES** ---",
+        "Ensure all content adheres to college ethics.",
+        "Avoid plagiarism or use of copyrighted material.",
+        "Late submissions will not be accepted.",
+        "Judges’ decisions are final"
+      ],
+      "Abstract and Deliverables": [
+        "Evaluation will be done based on on Storyline, Creativity, Cinematography, Acting & Direction."
+      ],
+      "Contact": {
+        "name": "Short Film Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "shortfilm@iare.ac.in"
+      }
+    },
+    {
+      "id": "Photography",
+      "title": "Photography Contest - Frames of Vision, Tales of Heart",
+      "category": "Photography",
+      "date": "October 31 - November 01, 2025",
+      "participants": "1 member",
+      "registrationFee": "99",
+      "logo": "https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg",
+      "shortDescription": "A celebration of creativity and storytelling, giving students a platform to showcase their ideas through photography.",
+      "Rules & Regulations": [
+        "Individual participation only. Each participant can submit a maximum of two photos.",
+        "Maximum 2 photos per participant.",
+        "Submission Rules: Photos should be in JPEG or PNG format. Basic editing like brightness, cropping, and contrast adjustment is allowed. AI-generated or overly edited images are not permitted.",
+        "Organizers reserve the right to disqualify entries violating guidelines."
+      ],
+      "Themes, Guidelines & Instructions": [
+        "Our College Through Your Lens” – Participants must capture photos only within the IARE campus.",
+        "--- **GUIDELINES** ---",
+        "Event Duration: The contest will be conducted over two days.",
+        "Judging Criteria: Creativity & Originality, Composition, Relevance to Theme, and Technical Quality.",
+        "Photos must be original and captured during the event. Plagiarism or use of stock images will result in disqualification. Judges’ decisions will be final.",
+        "The judges decision will be final and binding."
+      ],
+      "Abstract and Deliverables": [
+        "Whether it’s through the lens of a camera or the art of storytelling, this event encourages participants to express, explore, and inspire.",
+        "Judged on Creativity, Composition, Originality, and Technical Quality."
+      ],
+      "Contact": {
+        "name": "Photography Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "photography@iare.ac.in"
+      }
+    },
+    {
+      "id": "Paper-Presentation",
+      "title": "Technical Paper Presentation",
+      "category": "Paper-Presentation",
+      "date": "October 31 - November 01, 2025",
+      "participants": "2-3 per team",
+      "registrationFee": "200",
+      "logo": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "shortDescription": "An event to encourage students to explore, research, and present innovative ideas in various fields of technology and science.",
+      "Rules & Regulations": [
+        "Each team can have a maximum of 3 participants.",
+        "The topic of the paper must be related to the themes mentioned below in the details pdf.",
+        "Each team will get 8 minutes to present followed by 2 minutes for Q&A.",
+        "Papers with >20% similarity (checked via plagiarism tools) will be disqualified.",
+        "Participants must carry a college ID card and proof of registration on the day of the event."
+      ],
+      "Themes, Guidelines & Instructions": [
+        "There are different topics under each branch/domain, These themes will be given in Details Pdf attached below",
+        "--- **GUIDELINES** ---",
+        "Follow IEEE paper format",
+        "Bring Laptops for presentation purpose",
+        "Paper length should not exceed 6 pages including references."
+      ],
+      "Abstract and Deliverables": [
+        "Paper Review: Submitted papers are screened for originality, relevance, and proper formatting.",
+        "Technical Assessment: Judges evaluate the technical depth, innovation, and practical significance of the work.",
+        "Presentation Evaluation: Participants are assessed on clarity, confidence, slide design, and time management.",
+        "Q&A Session: Judges test the participants’ understanding and ability to defend their ideas.",
+        "Final Scoring: Scores from all judges are compiled, and winners are decided based on overall performance."
+      ],
+      "Contact": {
+        "name": "Paper Presentation Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "paperpresentation@iare.ac.in"
+      }
+    },
+    {
+      "id": "Cyber Crime",
+      "title": "Murder Mystery – One Crime. A Hundred Suspects. One Winner",
+      "category": "Cyber Crime",
+      "date": "October 31 - November 01, 2025",
+      "participants": "Max 3 members per team",
+      "registrationFee": "200",
+      "logo": "https://i.pinimg.com/1200x/2f/7e/3d/2f7e3dee2cf9e452805ddc58cce5b380.jpg",
+      "shortDescription": "An immersive investigative challenge that puts participants’ logic, intuition, and teamwork to the ultimate test to solve a mysterious crime.",
+      "Rules & Regulations": [
+        "Each team can have maximum of 3 members.",
+        "All members must be enrolled students of the participating college.",
+        "Teams must designate a Team Leader responsible for communication with organizers.",
+        "Registration Fee: ₹200 per Team"
+      ],
+      "Themes, Guidelines & Instructions": [
+        "Participants can choose one theme from the three broad themes:",
+        "Smart Society — AI and Prompt Engineering for civic intelligence and public services",
+        "Health & Wellbeing — AI-powered solutions for healthcare, wellness, and accessibility.",
+        "Reimagine Commerce/Finance — AI-driven innovations for industrial/private sector trade, finance, or personalized commerce.",
+        "--- **GUIDELINES** ---",
+        "Attention to clues, evidence collection, and logical reasoning will be part of the evaluation criteria.",
+        "Logical justification of every conclusion drawn will be essential; baseless guesses or random assumptions will not be considered valid.",
+        "Attention to minor details and careful sequencing of events will be advantageous in uncovering the true culprit.",
+        "Integrity and fair play are expected from all participants; any form of external assistance or disruption to other teams will lead to disqualification.",
+        "Mentors available for technical guidance",
+        "Clues may be presented in various forms such as written evidence, visual hints, or character interactions; participants must remain alert and adaptive to all formats.",
+        "Each team must interpret the evidence in a systematic manner to reconstruct the chain of events leading to the crime.",
+        "The ultimate objective is to accurately identify the murderer and provide a logical explanation supporting the deduction."
+      ],
+      "Abstract and Deliverables": [
+        "Murder Mystery — One Crime. A Hundred Suspects. One Winner” is an immersive investigative challenge that puts participants’ logic, intuition, and teamwork to the ultimate test.",
+        "Stepping into the role of detectives, participants must decode clues, analyze evidence, and unravel a tangled web of lies to uncover the truth behind a mysterious crime.",
+        "The event demands sharp observation, critical thinking, and the ability to separate fact from deception.",
+        "Every clue, statement, and twist will push participants to think deeper and connect the dots with precision and reasoning.",
+        "Beyond the thrill of solving the mystery, Murder Mystery emphasizes teamwork, communication, and strategic problem-solving.",
+        "As time runs out and suspicion grows, only the most perceptive minds will see through the chaos.",
+        "In this battle of wit and instinct, one team will stand above all — uncovering the truth behind the crime."
+      ],
+      "Contact": {
+        "name": "Murder Mystery Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "murdermystery@iare.ac.in"
+      }
+    },
+    {
+      "id": "AeroExpo",
+      "title": "AERO EXPO - The sky is not the limit, it’s just the beginning",
+      "category": "AeroExpo",
+      "date": "October 31 - November 01, 2025",
+      "participants": "Max 3 members per team",
+      "registrationFee": "400",
+      "logo": "https://www.virtual-fly.com/wp-content/uploads/AERO-2.png",
+      "shortDescription": "A flagship exhibition dedicated to showcasing innovative models, working prototypes, and detailed exhibits related to Aerospace Engineering, Aviation technology, and related disciplines.",
+      "Rules & Regulations": [
+        "Maximum Team Size: Three members per team.",
+        "Registration Fee: ₹400 per team (This event is considered a premium, high-effort showcase)."
+      ],
+      "Themes, Guidelines & Instructions": [
+        "Participants can choose their own theme.",
+        "--- **GUIDELINES** ---",
+        "Exhibit Type: Exhibits can include scale models, working prototypes, simulation demonstrations, or detailed research displays.",
+        "Setup: Teams are responsible for bringing all necessary materials, display boards, power adapters, and protective measures for their exhibit. Limited power supply will be available.",
+        "Content: Exhibits should include a concise title, objectives, methodology, and key findings/innovations clearly labeled.",
+        "Safety: All prototypes and exhibits must adhere to strict safety guidelines. No live combustion or hazardous materials are permitted. Organizers reserve the right to remove unsafe exhibits.",
+        "Timing: Teams must complete setup by the deadline provided by the coordinators.",
+        "Staffing: At least one team member must be present at the exhibit during all designated expo hours to interact with visitors and judges."
+      ],
+      "Abstract and Deliverables": [
+        "Model Quality & Engineering- Focuses on details, craftsmanship, and feasibility of the design.",
+        "Technical Explanation - Focuses on clarity and depth of explanation provided by the team members to visitors.",
+        "Innovation & Relevance - Novelty of the concept and its significance to modern aerospace/aviation challenges.",
+        "Presentation - Overall professional quality of the display area and materials."
+      ],
+      "Contact": {
+        "name": "Aero Expo Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "aeroexpo@iare.ac.in"
+      }
+    },
+    {
+      "id": "RC Simulator",
+      "title": "RC Simulator - The sky is not the limit, it’s just the beginning",
+      "category": "RC Simulator",
+      "date": "October 31 - November 01, 2025",
+      "participants": "Max 3 members per team",
+      "registrationFee": "300",
+      "logo": "https://play-lh.googleusercontent.com/2rzvThYF9et3nXIr0m04iTOy54IdRWBpwvMxc6oHWqRHRop6Jm8nMKA1Am5s7lRLbR0=w526-h296-rw",
+      "shortDescription": "Tests participants’ piloting precision and control in a virtual environment. It evaluates flight maneuverability, quick decision-making, and understanding of aerodynamics.",
+      "Rules & Regulations": [
+        "Maximum Team Size: Three members per team.",
+        "Registration Fee: ₹300 per team"
+      ],
+      "Themes, Guidelines & Instructions": [
+        "Participants can choose their own theme.",
+        "--- **GUIDELINES** ---",
+        "Equipment: Participants will use the simulator equipment provided by the organizers.",
+        "Rounds: The competition will consist of three rounds.",
+        "Scoring: Scoring will primarily be based on completion time, accuracy, and adherence to virtual flight path constraints. Penalties will be applied for crashes or boundary violations. Takeoff and landing precision will also be taken into consideration for final evaluation.",
+        "Fair Play: Any attempt to manipulate the software or hardware will result in immediate disqualification.",
+        "Timing: Participants should report 30 minutes before their scheduled slot.",
+        "Judges Decision: The judges decision regarding scores and disqualifications will be final and binding."
+      ],
+      "Abstract and Deliverables": [
+        "Precision and Control - Focuses on accuracy of flight maneuvers and smooth control inputs.",
+        "Time Efficiency - Focuses on Fastest time taken to successfully complete the defined course.",
+        "Damage/Penalty Avoidance - Minimal crashes or violations of simulation boundaries."
+      ],
+      "Contact": {
+        "name": "RC Simulator Coordinator",
+        "phone": "+91 XXXXX XXXXX",
+        "email": "rcsimulator@iare.ac.in"
       }
     }
   ]
 }
-

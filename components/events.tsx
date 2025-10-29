@@ -19,15 +19,21 @@ interface Event {
 }
 
 // 2. EVENTS DATA (No changes needed here)
+// 2. EVENTS DATA
 const events: Event[] = [
-  { id: 1, title: "Hackathon", category: "Competition", description: "24-hour coding marathon to build innovative solutions.", prize: "₹50,000", image: "/logo.png" },
-  { id: 2, title: "Tech Talk", category: "Workshop", description: "Industry experts share insights on emerging technologies.", prize: "Certificate", image: "/logo.png" },
-  { id: 3, title: "Robotics War", category: "Competition", description: "Battle of bots in an arena of innovation and strategy.", prize: "₹30,000", image: "/logo.png" },
-  { id: 4, title: "AI Workshop", category: "Workshop", description: "Hands-on session on machine learning and neural networks.", prize: "Certificate", image: "/logo.png" },
-  { id: 5, title: "Web Dev Sprint", category: "Competition", description: "Create stunning websites in a limited time.", prize: "₹25,000", image: "/logo.png" },
-  { id: 6, title: "Design Thinking", category: "Workshop", description: "Learn to solve problems with creative design approaches.", prize: "Certificate", image: "/logo.png" },
-  { id: 7, title: "Code Golf", category: "Competition", description: "Write the shortest code to solve complex problems.", prize: "₹15,000", image: "/logo.png" },
-  { id: 8, title: "IoT Showcase", category: "Exhibition", description: "Explore the world of connected devices and smart systems.", prize: "Recognition", image: "/logo.png" },
+  { id: 1, title: "WebNova", category: "Webathon", description: "Innovative webathon inspiring creativity through AI-powered tools and Prompt Engineering.", prize: "₹300/team", image: "/events/logos/ds.jpg" },
+  { id: 2, title: "House of Echoes", category: "Cyber Security", description: "Investigative cybersecurity event uncovering hidden digital crimes through forensic reasoning.", prize: "₹149/team", image: "/events/logos/cs.jpg" },
+  { id: 3, title: "Techno Hunt", category: "Treasure Hunt", description: "A thrilling technical treasure hunt blending brainpower, coding, and adventure!", prize: "₹200/team", image: "/events/logos/aiml.jpg" },
+  { id: 4, title: "AquaStruct", category: "Concrete Canoe", description: "Design, construct, and race a canoe made entirely out of concrete.", prize: "₹300/team", image: "/events/logos/civil.jpg" },
+  { id: 5, title: "EngiVision", category: "Poster Presentation", description: "Interdisciplinary poster presentation to ignite creativity and technical communication.", prize: "₹200/team", image: "/events/logos/ece.jpg" },
+  { id: 6, title: "VisionX", category: "Project Expo", description: "Showcases innovative projects promoting creativity, teamwork, and practical learning.", prize: "₹300/team", image: "/events/logos/mech.jpg" },
+  { id: 7, title: "BattleLAN", category: "LAN Gaming", description: "Competitive LAN gaming event combining the thrill of gaming with technology creativity.", prize: "₹200/team", image: "/events/logos/cse.jpg" },
+  { id: 8, title: "Short Film Contest", category: "Short Film", description: "A celebration of creativity and storytelling through films.", prize: "₹249/team", image: "/events/logos/ds.jpg" },
+  { id: 9, title: "Photography Contest", category: "Photography", description: "Capture IARE campus through your creative lens.", prize: "₹99", image: "/events/logos/ds.jpg" },
+  { id: 10, title: "Paper Presentation", category: "Technical", description: "Explore, research, and present innovative ideas in technology and science.", prize: "₹200/team", image: "/events/logos/ece.jpg" },
+  { id: 11, title: "Murder Mystery", category: "Cyber Crime", description: "An immersive investigative challenge to solve a mysterious crime.", prize: "₹200/team", image: "/events/logos/eee.jpg" },
+  { id: 12, title: "AERO EXPO", category: "Exhibition", description: "Showcase innovative aerospace models and working prototypes.", prize: "₹400/team", image:"/events/logos/ero.jpg" },
+  { id: 13, title: "RC Simulator", category: "Aviation", description: "Tests piloting precision and control in a virtual flight environment.", prize: "₹300/team", image: "/events/logos/ds.jpg" },
 ];
 
 // Carousel Arrow SVG Component
