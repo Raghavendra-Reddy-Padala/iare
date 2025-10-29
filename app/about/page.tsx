@@ -13,9 +13,9 @@ export default function AboutPage() {
       <div className="min-h-screen">
         <AboutHero />
         <WhyConsortium />
-        <Organizers />
-        <FacultyCoordinators />
-        <StudentCoordinators />
+        {/* <Organizers /> */}
+        {/* <FacultyCoordinators /> */}
+        {/* <StudentCoordinators /> */}
       </div>
       <Leva hidden />
     </>
