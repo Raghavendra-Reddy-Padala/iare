@@ -35,7 +35,8 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
       name: "", 
       rollNumber: "" 
     })),
-    battleLANGame: "" as string
+    battleLANGame: "" as string,
+    paperPresentationBranch: "" as string
   }));
   
   // Update team members array when teamMemberCount changes
@@ -79,8 +80,15 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
     }));
   };
 
+  const handleBranchSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      paperPresentationBranch: e.target.value
+    }));
+  };
+
   const validateForm = () => {
-    const { teamLeader, teamMembers, battleLANGame } = formData;
+    const { teamLeader, teamMembers, battleLANGame, paperPresentationBranch } = formData;
     
     if (!teamLeader.name || !teamLeader.college || !teamLeader.rollNumber || 
         !teamLeader.email || !teamLeader.phone) {
@@ -103,6 +111,12 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
     // BattleLAN specific validation
     if (event.id === "LANGaming" && !battleLANGame) {
       alert("Please select one game for BattleLAN");
+      return false;
+    }
+
+    // Paper Presentation specific validation
+    if (event.id === "Paper-Presentation" && !paperPresentationBranch) {
+      alert("Please select your branch/domain");
       return false;
     }
 
@@ -145,6 +159,11 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
       // Add battleLANGames only for LANGaming event
       if (event.id === "LANGaming") {
         registrationData.battleLANGame = formData.battleLANGame;
+      }
+
+      // Add branch only for Paper Presentation event
+      if (event.id === "Paper-Presentation") {
+        registrationData.paperPresentationBranch = formData.paperPresentationBranch;
       }
 
       const docRef = await addDoc(collection(db, "registrations"), registrationData);
@@ -236,6 +255,53 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
               </p>
             )}
           </section>
+
+          {/* Branch Selection - Only for Paper Presentation event */}
+          {event.id === "Paper-Presentation" && (
+            <section 
+              className="border border-foreground/20 p-8 bg-foreground/5"
+              onMouseEnter={() => setHovering(true)}
+              onMouseLeave={() => setHovering(false)}
+            >
+              <Pill className="mb-6">SELECT BRANCH/DOMAIN *</Pill>
+              <p className="font-mono text-sm text-foreground/60 mb-6">
+                Choose the branch/domain for your paper presentation
+              </p>
+              
+              <div className="flex items-center gap-4">
+                <label className="font-mono text-sm text-foreground/80">
+                  Branch/Domain:
+                </label>
+                <select
+                  title="Branch Selector"
+                  value={formData.paperPresentationBranch}
+                  onChange={handleBranchSelect}
+                  className="flex-1 bg-background border border-foreground/20 px-4 py-3 font-mono text-sm focus:outline-none focus:border-foreground/40"
+                  required
+                >
+                  <option value="">-- Select Branch --</option>
+                  <option value="CSE">CSE (Computer Science and Engineering)</option>
+                  <option value="AIML">AIML (Artificial Intelligence & Machine Learning)</option>
+                  <option value="CS">CS (Computer Science)</option>
+                  <option value="DS">DS (Data Science)</option>
+                  <option value="IT">IT (Information Technology)</option>
+                  <option value="AE">AE (Aeronautical Engineering)</option>
+                  <option value="EEE">EEE (Electrical and Electronics Engineering)</option>
+                  <option value="ECE">ECE (Electronics and Communication Engineering)</option>
+                  <option value="ME">ME (Mechanical Engineering)</option>
+                  <option value="CE">CE (Civil Engineering)</option>
+                </select>
+              </div>
+
+              {formData.paperPresentationBranch && (
+                <div className="mt-4 p-4 border border-foreground/20 bg-background">
+                  <p className="font-mono text-xs text-foreground/60">
+                    Selected Branch: {formData.paperPresentationBranch}
+                  </p>
+                </div>
+              )}
+            </section>
+          )}
 
           {/* Team Leader Details */}
           <section 
@@ -359,7 +425,7 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
                           className="w-full bg-background border border-foreground/20 px-4 py-3 font-mono text-sm focus:outline-none focus:border-foreground/40"
                           placeholder="Member's roll number"
                           required
-                />
+                        />
                       </div>
                     </div>
                   </div>
