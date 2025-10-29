@@ -139,16 +139,22 @@ export default function EventRegistration({ event }: EventRegistrationProps) {
 
     try {
       // Save to Firebase
-      const registrationData = {
+       const registrationData = {
         eventId: event.id,
         eventTitle: event.title,
         eventCategory: event.category,
+        eventDate: event.date,
+        eventTime: event.time,
+        eventVenue: event.venue,
         timestamp: new Date().toISOString(),
         teamSize: teamMemberCount,
+        participants: event.participants,
         teamLeader: formData.teamLeader,
         teamMembers: formData.teamMembers,
-        registrationFee: event.registrationFee,
-        paymentStatus: "pending"
+        registrationFee: parseFloat(event.registrationFee) || 0,
+        paymentStatus: "pending",
+        paymentCompleted: false,
+        registrationStatus: "pending"
       };
 
       const docRef = await addDoc(collection(db, "registrations"), registrationData);
