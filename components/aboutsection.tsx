@@ -52,7 +52,7 @@ export default function AboutSection() {
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
           >
-            <div className="text-4xl font-sentient font-bold">50+</div>
+            <div className="text-4xl font-sentient font-bold">15+</div>
             <div className="text-sm font-mono text-foreground/60 mt-2">Events</div>
           </div>
           
@@ -61,7 +61,7 @@ export default function AboutSection() {
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
           >
-            <div className="text-4xl font-sentient font-bold">5000+</div>
+            <div className="text-4xl font-sentient font-bold">1000+</div>
             <div className="text-sm font-mono text-foreground/60 mt-2">Participants</div>
           </div>
           
@@ -70,7 +70,7 @@ export default function AboutSection() {
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
           >
-            <div className="text-4xl font-sentient font-bold">3 Days</div>
+            <div className="text-4xl font-sentient font-bold">2 Days</div>
             <div className="text-sm font-mono text-foreground/60 mt-2">Of Innovation</div>
           </div>
         </div>
